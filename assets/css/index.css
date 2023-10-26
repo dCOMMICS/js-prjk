@@ -152,9 +152,31 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.nav__logo{
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5rem;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
 
+nav__logo i{
+  font-size: 1.25rem;
+}
 
 /* Navigation for mobile devices */
+@media screen and (max-width:1150px){
+  .nav__logo{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--container-color);
+    box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .1);
+    transition: background-color .4s; 
+  }
+}
 
 
 /* Add shadow header */
